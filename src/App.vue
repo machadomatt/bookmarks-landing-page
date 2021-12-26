@@ -335,13 +335,20 @@
                 <h1 class="text-3xl text-center">Stay up-to-date with what we're doing</h1>
                 <div class="flex flex-col gap-6 mt-8 sm:flex-row">
                     <input
-                        type="text"
-                        placeholder="Enter your email address"
-                        class="flex-1 px-2 py-3 rounded-md text-black focus:outline-none"
+                        type="e-mail"
+                        v-model="email"
+                        placeholder="Enter your e-mail address"
+                        class="flex-1 px-3 py-3 rounded-md text-black focus:outline-none"
                     />
                     <button
                         type="button"
-                        class="btn bg-bookmark-red hover:bg-bookmark-white hover:text-black"
+                        class="
+                            btn
+                            bg-bookmark-red
+                            hover:bg-bookmark-white hover:text-black
+                            disabled:opacity-70
+                        "
+                        :disabled="isButtonDisabled"
                     >
                         Contact Us
                     </button>
@@ -396,6 +403,28 @@
     </footer>
 </template>
 
-<script></script>
+<script>
+import { ref, watch } from 'vue'
+
+export default {
+    setup() {
+        const email = ref('')
+        const isEmailValid = ref(false)
+        const isButtonDisabled = ref(false)
+        const emailRegEx =
+            /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+
+        watch(email, (email) => {
+            isButtonDisabled.value = true
+            if (emailRegEx.test(email)) {
+                isEmailValid.value = true
+                isButtonDisabled.value = false
+            }
+        })
+
+        return { email, isButtonDisabled }
+    },
+}
+</script>
 
 <style></style>
