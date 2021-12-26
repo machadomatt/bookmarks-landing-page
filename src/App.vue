@@ -13,7 +13,7 @@
                     gap-12
                     text-bookmark-blue
                     uppercase
-                    text-xs
+                    text-sm
                     sm:flex
                 "
             >
