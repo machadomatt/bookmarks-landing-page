@@ -103,7 +103,7 @@
                 </template>
             </div>
         </nav>
-        <nav class="p-4" :class="{ hidden: isMobileNavHidden }">
+        <nav class="p-4 sm:hidden" :class="{ hidden: isMobileNavHidden }">
             <ul class="bg-bookmark-white p-4 text-center">
                 <li class="mb-3"><a class="text-xl font-medium" href="#features">Features</a></li>
                 <li class="mb-3"><a class="text-xl font-medium" href="#faq">FAQ</a></li>
