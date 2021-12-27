@@ -2,7 +2,7 @@
     <header>
         <nav class="container flex items-center py-4 mt-4 sm:mt-12">
             <div class="py-1">
-                <img src="./assets/img/logo-bookmark.svg" alt="Bookmarks" />
+                <img width="148" height="25" src="./assets/img/logo-bookmark.svg" alt="Bookmarks" />
             </div>
             <ul
                 class="
