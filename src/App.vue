@@ -17,9 +17,9 @@
                     sm:flex
                 "
             >
-                <li class="cursor-pointer">Features</li>
-                <li class="cursor-pointer">Pricing</li>
-                <li class="cursor-pointer">Contact</li>
+                <li class="cursor-pointer"><a href="#features">Features</a></li>
+                <li class="cursor-pointer"><a href="#faq">FAQ</a></li>
+                <li class="cursor-pointer"><a href="#contact">Contact</a></li>
                 <button
                     type="button"
                     class="bg-bookmark-red text-white rounded-md px-7 py-3 uppercase"
@@ -92,7 +92,7 @@
         ></div>
     </section>
 
-    <section class="bg-bookmark-white py-20 mt-20 lg:mt-60">
+    <section id="features" class="bg-bookmark-white py-20 mt-20 lg:mt-60">
         <div class="mx-auto px-2 sm:w-3/4 lg:w-5/12">
             <h1 class="text-3xl text-center text-bookmark-blue">Features</h1>
             <p class="text-center text-bookmark-grey mt-4">
@@ -271,7 +271,7 @@
         </div>
     </section>
 
-    <section class="bg-bookmark-white py-20">
+    <section id="faq" class="bg-bookmark-white py-20">
         <div class="mx-auto px-2 sm:w-3/4 lg:w-5/12">
             <h1 class="text-3xl text-center text-bookmark-blue">Frequently Asked Questions</h1>
             <p class="text-center text-bookmark-grey mt-4">
@@ -388,7 +388,7 @@
         </div>
     </section>
 
-    <section class="bg-bookmark-purple text-white py-20">
+    <section id="contact" class="bg-bookmark-purple text-white py-20">
         <div class="container">
             <div class="mx-auto sm:w-3/4 lg:w-2/4">
                 <p class="font-light uppercase text-center mb-8">35,000+ ALREADY JOINED</p>
@@ -422,9 +422,9 @@
             <div class="flex flex-1 flex-wrap items-center justify-center gap-12 md:justify-start">
                 <img src="./assets/img/logo-bookmark-white.png" alt="" />
                 <ul class="flex text-white uppercase gap-12 text-xs">
-                    <li class="cursor-pointer">Features</li>
-                    <li class="cursor-pointer">Pricing</li>
-                    <li class="cursor-pointer">Contact</li>
+                    <li class="cursor-pointer"><a href="#features">Features</a></li>
+                    <li class="cursor-pointer"><a href="#faq">FAQ</a></li>
+                    <li class="cursor-pointer"><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             <div class="flex gap-10 mt-12 md:mt-0">
