@@ -17,12 +17,53 @@
                     sm:flex
                 "
             >
-                <li class="cursor-pointer"><a href="#features">Features</a></li>
-                <li class="cursor-pointer"><a href="#faq">FAQ</a></li>
-                <li class="cursor-pointer"><a href="#contact">Contact</a></li>
+                <li class="cursor-pointer">
+                    <a
+                        class="
+                            transition
+                            outline-none
+                            hover:text-bookmark-red
+                            focus:text-bookmark-red
+                        "
+                        href="#features"
+                        >Features</a
+                    >
+                </li>
+                <li class="cursor-pointer">
+                    <a
+                        class="
+                            transition
+                            outline-none
+                            hover:text-bookmark-red
+                            focus:text-bookmark-red
+                        "
+                        href="#faq"
+                        >FAQ</a
+                    >
+                </li>
+                <li class="cursor-pointer">
+                    <a
+                        class="
+                            transition
+                            outline-none
+                            hover:text-bookmark-red
+                            focus:text-bookmark-red
+                        "
+                        href="#contact"
+                        >Contact</a
+                    >
+                </li>
                 <button
                     type="button"
-                    class="bg-bookmark-red text-white rounded-md px-7 py-3 uppercase"
+                    class="
+                        btn
+                        bg-bookmark-red
+                        text-white
+                        uppercase
+                        outline-none
+                        focus:bg-bookmark-white focus:text-black
+                        hover:bg-bookmark-white hover:text-black
+                    "
                 >
                     Login
                 </button>
@@ -405,6 +446,7 @@
                         class="
                             btn
                             bg-bookmark-red
+                            focus:bg-bookmark-white focus:text-black
                             hover:bg-bookmark-white hover:text-black
                             disabled:opacity-70
                         "
@@ -422,18 +464,58 @@
             <div class="flex flex-1 flex-wrap items-center justify-center gap-12 md:justify-start">
                 <img src="./assets/img/logo-bookmark-white.png" alt="" />
                 <ul class="flex text-white uppercase gap-12 text-xs">
-                    <li class="cursor-pointer"><a href="#features">Features</a></li>
-                    <li class="cursor-pointer"><a href="#faq">FAQ</a></li>
-                    <li class="cursor-pointer"><a href="#contact">Contact</a></li>
+                    <li class="cursor-pointer">
+                        <a
+                            class="
+                                transition
+                                outline-none
+                                hover:text-bookmark-red
+                                focus:text-bookmark-red
+                            "
+                            href="#features"
+                            >Features</a
+                        >
+                    </li>
+                    <li class="cursor-pointer">
+                        <a
+                            class="
+                                transition
+                                outline-none
+                                hover:text-bookmark-red
+                                focus:text-bookmark-red
+                            "
+                            href="#faq"
+                            >FAQ</a
+                        >
+                    </li>
+                    <li class="cursor-pointer">
+                        <a
+                            class="
+                                transition
+                                outline-none
+                                hover:text-bookmark-red
+                                focus:text-bookmark-red
+                            "
+                            href="#contact"
+                            >Contact</a
+                        >
+                    </li>
                 </ul>
             </div>
             <div class="flex gap-10 mt-12 md:mt-0">
-                <a href="#">
+                <a href="#" class="transition outline-none group">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         aria-hidden="true"
                         focusable="false"
-                        class="text-white w-6 h-6"
+                        class="
+                            text-white
+                            w-6
+                            h-6
+                            transition
+                            group-hover:text-bookmark-red
+                            group-focus:text-bookmark-red
+                        "
                         role="img"
                         viewBox="0 0 512 512"
                     >
@@ -443,12 +525,19 @@
                         />
                     </svg>
                 </a>
-                <a href="#">
+                <a href="#" class="transition outline-none group">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         aria-hidden="true"
                         focusable="false"
-                        class="text-white w-6 h-6"
+                        class="
+                            text-white
+                            w-6
+                            h-6
+                            transition
+                            group-hover:text-bookmark-red
+                            group-focus:text-bookmark-red
+                        "
                         role="img"
                         viewBox="0 0 448 512"
                     >
