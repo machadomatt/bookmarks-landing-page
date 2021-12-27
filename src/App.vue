@@ -139,6 +139,8 @@
                     class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
                     src="./assets/img/hero-bg.png"
                     alt="A Simple Bookmark Manager"
+                    width="579"
+                    height="386"
                 />
             </div>
         </div>
@@ -173,7 +175,9 @@
                     <img
                         class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
                         src="./assets/img/illustration-features-tab-1.png"
-                        alt=""
+                        alt="Bookmark in one click"
+                        width="536"
+                        height="346"
                     />
                 </div>
                 <div class="flex flex-1 flex-col items-center lg:items-start">
@@ -215,7 +219,9 @@
                     <img
                         class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
                         src="./assets/img/illustration-features-tab-2.png"
-                        alt=""
+                        alt="Intelligent search"
+                        width="478"
+                        height="393"
                     />
                 </div>
                 <div class="flex flex-1 flex-col items-center lg:items-start">
@@ -248,7 +254,9 @@
                     <img
                         class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
                         src="./assets/img/illustration-features-tab-3.png"
-                        alt=""
+                        alt="Share your bookmarks"
+                        width="440"
+                        height="380"
                     />
                 </div>
                 <div class="flex flex-1 flex-col items-center lg:items-start">
@@ -298,7 +306,7 @@
         >
             <div class="flex flex-col rounded-md shadow-md lg:mb-16">
                 <div class="p-6 flex flex-col items-center">
-                    <img src="./assets/img/logo-chrome.svg" alt="Chrome" />
+                    <img width="102" height="100" src="./assets/img/logo-chrome.svg" alt="Chrome" />
                     <h3 class="mt-5 mb-2 text-bookmark-blue text-lg">Add to Chrome</h3>
                     <p class="mb-2 text-bookmark-grey font-light">Minimum version 62</p>
                 </div>
@@ -311,7 +319,12 @@
             </div>
             <div class="flex flex-col rounded-md shadow-md lg:my-8">
                 <div class="p-6 flex flex-col items-center">
-                    <img src="./assets/img/logo-firefox.svg" alt="Firefox" />
+                    <img
+                        width="105"
+                        height="100"
+                        src="./assets/img/logo-firefox.svg"
+                        alt="Firefox"
+                    />
                     <h3 class="mt-5 mb-2 text-bookmark-blue text-lg">Add to Firefox</h3>
                     <p class="mb-2 text-bookmark-grey font-light">Minimum version 62</p>
                 </div>
@@ -324,7 +337,7 @@
             </div>
             <div class="flex flex-col rounded-md shadow-md lg:mt-16">
                 <div class="p-6 flex flex-col items-center">
-                    <img src="./assets/img/logo-opera.svg" alt="Opera" />
+                    <img width="96" height="100" src="./assets/img/logo-opera.svg" alt="Opera" />
                     <h3 class="mt-5 mb-2 text-bookmark-blue text-lg">Add to Opera</h3>
                     <p class="mb-2 text-bookmark-grey font-light">Minimum version 62</p>
                 </div>
@@ -488,7 +501,12 @@
     <footer class="bg-bookmark-blue py-8">
         <div class="container flex flex-col md:flex-row items-center">
             <div class="flex flex-1 flex-wrap items-center justify-center gap-12 md:justify-start">
-                <img src="./assets/img/logo-bookmark-white.png" alt="" />
+                <img
+                    width="148"
+                    height="25"
+                    src="./assets/img/logo-bookmark-white.png"
+                    alt="Bookmark"
+                />
                 <ul class="flex text-white uppercase gap-12 text-xs">
                     <li class="cursor-pointer">
                         <a
