@@ -69,20 +69,46 @@
                 </button>
             </ul>
             <div class="flex flex-1 justify-end sm:hidden">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true"
-                    focusable="false"
-                    class="w-6 h-6 text-bookmark-blue"
-                    role="img"
-                    viewBox="0 0 448 512"
-                >
-                    <path
-                        fill="currentColor"
-                        d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
-                    />
-                </svg>
+                <template v-if="isMobileNavHidden">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                        focusable="false"
+                        class="w-7 h-7 text-bookmark-blue"
+                        @click="mobileNavToggle"
+                        role="img"
+                        viewBox="0 0 448 512"
+                    >
+                        <path
+                            fill="currentColor"
+                            d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                        />
+                    </svg>
+                </template>
+                <template v-else>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                        focusable="false"
+                        class="w-7 h-7 text-bookmark-blue"
+                        @click="mobileNavToggle"
+                        role="img"
+                        viewBox="0 0 352 512"
+                    >
+                        <path
+                            fill="currentColor"
+                            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+                        />
+                    </svg>
+                </template>
             </div>
+        </nav>
+        <nav class="p-4" :class="{ hidden: isMobileNavHidden }">
+            <ul class="bg-bookmark-white p-4 text-center">
+                <li class="mb-3"><a class="text-xl font-medium" href="#features">Features</a></li>
+                <li class="mb-3"><a class="text-xl font-medium" href="#faq">FAQ</a></li>
+                <li><a class="text-xl font-medium" href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -562,6 +588,7 @@ export default {
         const isButtonDisabled = ref(false)
         const emailRegEx =
             /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        const isMobileNavHidden = ref(true)
 
         watch(email, (email) => {
             isButtonDisabled.value = true
@@ -571,7 +598,11 @@ export default {
             }
         })
 
-        return { email, isButtonDisabled }
+        const mobileNavToggle = () => {
+            isMobileNavHidden.value = !isMobileNavHidden.value
+        }
+
+        return { email, isButtonDisabled, isMobileNavHidden, mobileNavToggle }
     },
 }
 </script>
