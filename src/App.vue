@@ -280,50 +280,110 @@
             </p>
         </div>
         <div class="flex flex-col mt-12 mx-auto px-4 sm:w-3/4 lg:w-5/12">
-            <div class="flex items-center border-b py-4">
-                <span class="flex-1">What is a Bookmark?</span>
-                <svg
-                    class="text-bookmark-purple"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="12"
-                >
-                    <path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8" />
-                </svg>
-            </div>
-            <div class="flex items-center border-b py-4">
-                <span class="flex-1">How can I request a new browser?</span>
-                <svg
-                    class="text-bookmark-purple"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="12"
-                >
-                    <path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8" />
-                </svg>
-            </div>
-            <div class="flex items-center border-b py-4">
-                <span class="flex-1">Is there a mobile app?</span>
-                <svg
-                    class="text-bookmark-purple"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="12"
-                >
-                    <path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8" />
-                </svg>
-            </div>
-            <div class="flex items-center border-b py-4">
-                <span class="flex-1">What about other Chromium browsers?</span>
-                <svg
-                    class="text-bookmark-purple"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="12"
-                >
-                    <path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8" />
-                </svg>
-            </div>
+            <details class="group">
+                <summary class="flex items-center border-b py-4">
+                    <span class="flex-1">What is a Bookmark?</span>
+                    <svg
+                        class="
+                            text-bookmark-purple
+                            transition
+                            duration-[250ms]
+                            group-open:-rotate-180
+                        "
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="12"
+                    >
+                        <path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8" />
+                    </svg>
+                </summary>
+                <div class="p-5 bg-white">
+                    <p class="text-bookmark-grey">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fugit
+                        corporis voluptate fuga ad. Possimus ut inventore voluptatum ratione
+                        repellendus a minus esse praesentium recusandae quasi dolore, ipsum,
+                        accusantium aliquid.
+                    </p>
+                </div>
+            </details>
+            <details class="group">
+                <summary class="flex items-center border-b py-4">
+                    <span class="flex-1">How can I request a new browser?</span>
+                    <svg
+                        class="
+                            text-bookmark-purple
+                            transition
+                            duration-[250ms]
+                            group-open:-rotate-180
+                        "
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="12"
+                    >
+                        <path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8" />
+                    </svg>
+                </summary>
+                <div class="p-5 bg-white">
+                    <p class="text-bookmark-grey">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fugit
+                        corporis voluptate fuga ad. Possimus ut inventore voluptatum ratione
+                        repellendus a minus esse praesentium recusandae quasi dolore, ipsum,
+                        accusantium aliquid.
+                    </p>
+                </div>
+            </details>
+            <details class="group">
+                <summary class="flex items-center border-b py-4">
+                    <span class="flex-1">Is there a mobile app?</span>
+                    <svg
+                        class="
+                            text-bookmark-purple
+                            transition
+                            duration-[250ms]
+                            group-open:-rotate-180
+                        "
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="12"
+                    >
+                        <path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8" />
+                    </svg>
+                </summary>
+                <div class="p-5 bg-white">
+                    <p class="text-bookmark-grey">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fugit
+                        corporis voluptate fuga ad. Possimus ut inventore voluptatum ratione
+                        repellendus a minus esse praesentium recusandae quasi dolore, ipsum,
+                        accusantium aliquid.
+                    </p>
+                </div>
+            </details>
+            <details class="group">
+                <summary class="flex items-center border-b py-4">
+                    <span class="flex-1">What about other Chromium browsers?</span>
+                    <svg
+                        class="
+                            text-bookmark-purple
+                            transition
+                            duration-[250ms]
+                            group-open:-rotate-180
+                        "
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="12"
+                    >
+                        <path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8" />
+                    </svg>
+                </summary>
+                <div class="p-5 bg-white">
+                    <p class="text-bookmark-grey">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fugit
+                        corporis voluptate fuga ad. Possimus ut inventore voluptatum ratione
+                        repellendus a minus esse praesentium recusandae quasi dolore, ipsum,
+                        accusantium aliquid.
+                    </p>
+                </div>
+            </details>
             <button type="button" class="btn btn-purple mt-12 flex self-center">More Info</button>
         </div>
     </section>
