@@ -115,7 +115,7 @@
     <section class="relative">
         <div class="container flex flex-col-reverse items-center gap-12 mt-14 lg:flex-row lg:mt-28">
             <div class="flex flex-1 flex-col items-center lg:items-start">
-                <h2
+                <h1
                     class="
                         text-bookmark-blue text-3xl text-center
                         mb-6
@@ -124,7 +124,7 @@
                     "
                 >
                     A Simple Bookmark Manager
-                </h2>
+                </h1>
                 <p class="text-bookmark-grey text-lg mb-6 text-center lg:text-left">
                     A clean and simple interface to organize your favourite websites. Open a new
                     browser tab and see your sites load instantly. Try it for free.
@@ -161,7 +161,7 @@
 
     <section id="features" class="bg-bookmark-white py-20 mt-20 lg:mt-60">
         <div class="mx-auto px-2 sm:w-3/4 lg:w-5/12">
-            <h1 class="text-3xl text-center text-bookmark-blue">Features</h1>
+            <h2 class="text-3xl text-center text-bookmark-blue">Features</h2>
             <p class="text-center text-bookmark-grey mt-4">
                 Our aim is to make it quick and easy for you to access your favourite websites. Your
                 bookmarks sync between your devices so you can access them on the go.
@@ -177,7 +177,7 @@
                     />
                 </div>
                 <div class="flex flex-1 flex-col items-center lg:items-start">
-                    <h1 class="text-3xl text-bookmark-blue">Bookmark in one click</h1>
+                    <h3 class="text-3xl text-bookmark-blue">Bookmark in one click</h3>
                     <p class="text-bookmark-grey my-4 text-center sm:w-3/4 lg:text-left lg:w-full">
                         Organize your bookmarks however you like. Our simple drag-and-drop interface
                         gives you complete control over how you manage your favourite sites.
@@ -219,7 +219,7 @@
                     />
                 </div>
                 <div class="flex flex-1 flex-col items-center lg:items-start">
-                    <h1 class="text-3xl text-bookmark-blue">Intelligent search</h1>
+                    <h3 class="text-3xl text-bookmark-blue">Intelligent search</h3>
                     <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
                         Our powerful search feature will help you find saved sites in no time at
                         all. No need to crawl through all of your bookmarks.
@@ -252,7 +252,7 @@
                     />
                 </div>
                 <div class="flex flex-1 flex-col items-center lg:items-start">
-                    <h1 class="text-3xl text-bookmark-blue">Share your bookmarks</h1>
+                    <h3 class="text-3xl text-bookmark-blue">Share your bookmarks</h3>
                     <p class="text-bookmark-grey my-4 text-center sm:w-3/4 lg:w-full lg:text-left">
                         Easily share your bookmarks and collections with others. Create a shareable
                         link that you can send at the click of a button.
@@ -279,7 +279,7 @@
 
     <section class="py-20 mt-20">
         <div class="mx-auto px-2 sm:w-3/4 lg:w-5/12">
-            <h1 class="text-3xl text-center text-bookmark-blue">Download the extension</h1>
+            <h2 class="text-3xl text-center text-bookmark-blue">Download the extension</h2>
             <p class="text-center text-bookmark-grey mt-4">
                 We've got more browsers in the pipeline. Please do let us know if you've got a
                 favourite you'd like us to prioritize.
@@ -340,7 +340,7 @@
 
     <section id="faq" class="bg-bookmark-white py-20">
         <div class="mx-auto px-2 sm:w-3/4 lg:w-5/12">
-            <h1 class="text-3xl text-center text-bookmark-blue">Frequently Asked Questions</h1>
+            <h2 class="text-3xl text-center text-bookmark-blue">Frequently Asked Questions</h2>
             <p class="text-center text-bookmark-grey mt-4">
                 Here are some of our FAQs. If you have any other questions you'd like answered
                 please feel free to email us.
@@ -459,7 +459,7 @@
         <div class="container">
             <div class="mx-auto sm:w-3/4 lg:w-2/4">
                 <p class="font-light uppercase text-center mb-8">35,000+ ALREADY JOINED</p>
-                <h1 class="text-3xl text-center">Stay up-to-date with what we're doing</h1>
+                <h2 class="text-3xl text-center">Stay up-to-date with what we're doing</h2>
                 <div class="flex flex-col gap-6 mt-8 sm:flex-row">
                     <input
                         type="e-mail"
@@ -529,7 +529,7 @@
                 </ul>
             </div>
             <div class="flex gap-10 mt-12 md:mt-0">
-                <a href="#" class="transition outline-none group">
+                <a href="#" class="transition outline-none group" aria-label="Twitter">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         aria-hidden="true"
@@ -551,7 +551,7 @@
                         />
                     </svg>
                 </a>
-                <a href="#" class="transition outline-none group">
+                <a href="#" class="transition outline-none group" aria-label="Facebook">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         aria-hidden="true"
