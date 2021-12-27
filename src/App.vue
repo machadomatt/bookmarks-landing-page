@@ -280,8 +280,8 @@
             </p>
         </div>
         <div class="flex flex-col mt-12 mx-auto px-4 sm:w-3/4 lg:w-5/12">
-            <details class="group">
-                <summary class="flex items-center border-b py-4">
+            <details class="group" open>
+                <summary class="flex items-center border-b py-4 cursor-pointer">
                     <span class="flex-1">What is a Bookmark?</span>
                     <svg
                         class="
@@ -307,7 +307,7 @@
                 </div>
             </details>
             <details class="group">
-                <summary class="flex items-center border-b py-4">
+                <summary class="flex items-center border-b py-4 cursor-pointer">
                     <span class="flex-1">How can I request a new browser?</span>
                     <svg
                         class="
@@ -333,7 +333,7 @@
                 </div>
             </details>
             <details class="group">
-                <summary class="flex items-center border-b py-4">
+                <summary class="flex items-center border-b py-4 cursor-pointer">
                     <span class="flex-1">Is there a mobile app?</span>
                     <svg
                         class="
@@ -359,7 +359,7 @@
                 </div>
             </details>
             <details class="group">
-                <summary class="flex items-center border-b py-4">
+                <summary class="flex items-center border-b py-4 cursor-pointer">
                     <span class="flex-1">What about other Chromium browsers?</span>
                     <svg
                         class="
